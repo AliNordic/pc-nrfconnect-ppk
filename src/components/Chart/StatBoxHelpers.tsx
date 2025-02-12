@@ -45,7 +45,7 @@ export const Value = ({ label, u, white = false }: ValueProperties) => {
               value: (
                   <>
                       {valStr}
-                      <span className="tw-text-xs">
+                      <span className={label === 'average' ? 'tw-text-6xl' : 'tw-text-xs'}>
                           {unitStr.replace('u', '\u00B5')}
                       </span>
                   </>
