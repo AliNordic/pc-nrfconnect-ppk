@@ -121,7 +121,7 @@ export default ({
                 )}
                 {!processing && delta !== null && (
                     <>
-                        <Value label="average" u={unit(average!, 'uA')} />
+                        <Value label="average " u={unit(average!, 'uA')} />
                         <Value label="max" u={unit(max || 0, 'uA')} />
                         <ValueRaw
                             label="time"
