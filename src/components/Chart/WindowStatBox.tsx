@@ -27,7 +27,6 @@ export default ({
             <h2 className="tw-inline tw-text-[10px] tw-uppercase">Window</h2>
         </div>
         <div className="tw-flex tw-flex-row tw-gap-[1px] tw-border tw-border-solid tw-border-gray-200 tw-bg-gray-200">
-            <Value label="average" u={unit(average!, 'uA')} white />
             <Value label="max" u={unit(max || 0, 'uA')} white />
             <ValueRaw
                 label="time"
@@ -39,6 +38,9 @@ export default ({
                 label="charge"
                 u={unit(average! * ((delta || 1) / 1e6), 'uC')}
             />
+        </div>
+        <div className="tw-mt-2 tw-flex tw-justify-center tw-items-center tw-text-6xl tw-font-bold tw-border tw-border-gray-400 tw-bg-gradient-to-r tw-from-yellow-200 tw-to-yellow-400 tw-p-4 tw-shadow-lg tw-rounded-lg">
+            <Value label="average" u={unit(average!, 'uA')} white />
         </div>
     </div>
 );
