@@ -31,7 +31,7 @@ export const ValueRaw = ({
         )}
     >
         <div className={`tw-h-7 tw-whitespace-nowrap ${label === 'average' ? 'tw-text-6xl tw-mb-8' : 'tw-text-lg'}`}>{value}</div>
-        <span className={`tw-text-xs ${label === 'average' ? 'tw-text-4xl' : ''}`}>{label}</span>
+        <span className={label === 'average' ? 'tw-text-xl' : 'tw-text-xs'}>{label}</span>
     </div>
 );
 
